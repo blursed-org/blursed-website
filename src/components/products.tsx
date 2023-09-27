@@ -20,12 +20,12 @@ export async function Products() {
   ]
 
   return (
-    <section className="from-gradient to-gradient-foreground bg-gradient-to-b py-6 pb-[100px]">
+    <section className="bg-gradient-to-b from-gradient to-gradient-foreground py-6 pb-[100px]">
       <div className="flex items-center justify-center gap-4">
-        <h2 className="from-title to-title-foreground bg-gradient-to-b bg-clip-text text-center text-[32px] font-bold tracking-tighter text-transparent">
+        <h2 className="bg-gradient-to-b from-title to-title-foreground bg-clip-text text-center text-[32px] font-bold tracking-tighter text-transparent">
           What are our products?
         </h2>
-        <p className="text-muted-foreground tracking-tight">
+        <p className="tracking-tight text-muted-foreground">
           Try our products combination!
         </p>
       </div>

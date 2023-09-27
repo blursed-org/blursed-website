@@ -33,11 +33,11 @@ export async function Hero() {
   return (
     <div className="relative grid h-[530px] place-content-center">
       <div className="absolute inset-0 -z-10 h-full bg-[url('../../public/grid-light.svg')] bg-center bg-repeat [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] dark:bg-[url('../../public/grid-dark.svg')]" />
-      <h1 className="from-title to-title-foreground bg-gradient-to-b bg-clip-text px-6 py-3 text-center text-[64px] font-extrabold tracking-tighter text-transparent">
+      <h1 className="bg-gradient-to-b from-title to-title-foreground bg-clip-text px-6 py-3 text-center text-[64px] font-extrabold tracking-tighter text-transparent">
         Privacy, Secure & Open-Source.
       </h1>
 
-      <p className="text-muted-foreground px-4 py-3 text-center text-lg font-medium">
+      <p className="px-4 py-3 text-center text-lg font-medium text-muted-foreground">
         We provide our users with a secure and private experience. <br />
         Our products together can be an excellent combination. Try it now!
       </p>

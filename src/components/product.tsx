@@ -20,22 +20,22 @@ export async function Product({
 }: productProps) {
   return (
     <Link href={`/${href}`} className="group">
-      <div className="from-card to-card-foreground shadow-productCard group-hover:from-card-foreground flex h-full flex-col justify-between rounded-xl border bg-gradient-to-b p-8">
+      <div className="flex h-full flex-col justify-between rounded-xl border bg-gradient-to-b from-card to-card-foreground p-8 shadow-productCard group-hover:from-card-foreground">
         <div>
           <strong className="flex items-baseline gap-2 text-[22px] font-semibold">
             {name}
-            <ExternalLink className="text-muted-foreground h-4 w-4" />
+            <ExternalLink className="h-4 w-4 text-muted-foreground" />
           </strong>
-          <p className="text-muted-foreground mt-3 text-base">{description}</p>
+          <p className="mt-3 text-base text-muted-foreground">{description}</p>
         </div>
 
         <div className="mt-6">
           {features.map((feature) => (
             <p
               key={feature}
-              className="text-muted-foreground flex items-center gap-2 text-sm"
+              className="flex items-center gap-2 text-sm text-muted-foreground"
             >
-              <Check className="text-primary h-4 w-4" />
+              <Check className="h-4 w-4 text-primary" />
               {feature}
             </p>
           ))}

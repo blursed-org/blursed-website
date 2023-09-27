@@ -31,7 +31,7 @@ export async function Header() {
   ]
 
   return (
-    <header className="bg-background/95 sticky top-0 z-50 w-full border-b backdrop-blur">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur">
       <div className="container flex h-14 items-center">
         <div className="flex items-center">
           <Link href={'/'}>
@@ -43,7 +43,7 @@ export async function Header() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="hover:text-foreground/80 text-foreground/60 flex items-center space-x-2 transition-colors"
+                className="flex items-center space-x-2 text-foreground/60 transition-colors hover:text-foreground/80"
               >
                 {link.name}
                 {link.isDropdown && <ChevronDown className="h-5 w-5" />}
