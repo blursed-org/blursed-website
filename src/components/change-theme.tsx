@@ -11,8 +11,6 @@ import { cn } from '@/lib/utils'
 export function ChangeTheme({ className }: { className?: string }) {
   const { theme, setTheme } = useTheme()
 
-  console.log(theme)
-
   return (
     <Button
       variant={'ghost'}
