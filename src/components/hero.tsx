@@ -34,7 +34,7 @@ export async function Hero() {
     <div className="relative grid h-[530px] place-content-center">
       <div className="absolute inset-0 -z-10 h-full bg-[url('../../public/grid-light.svg')] bg-center bg-repeat [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] dark:bg-[url('../../public/grid-dark.svg')]" />
       <h1 className="bg-gradient-to-b from-title to-title-foreground bg-clip-text px-6 py-3 text-center text-[64px] font-extrabold tracking-tighter text-transparent">
-        Privacy, Secure & Open-Source.
+        Privacy, Security & Open-Source.
       </h1>
 
       <p className="px-4 py-3 text-center text-lg font-medium text-muted-foreground">

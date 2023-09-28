@@ -49,6 +49,7 @@ module.exports = {
         card: {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
+          hover: 'hsla(var(--card-hover))',
         },
         title: {
           DEFAULT: 'hsl(var(--title))',
@@ -61,7 +62,7 @@ module.exports = {
         },
       },
       boxShadow: {
-        productCard: '0px 0px 0px 8px hsl(var(--card-shadow)) inset',
+        productCard: '0px 0px 0px 6px hsl(var(--card-shadow)) inset',
       },
       borderRadius: {
         lg: 'var(--radius)',

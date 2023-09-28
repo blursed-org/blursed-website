@@ -20,7 +20,7 @@ export async function Product({
 }: productProps) {
   return (
     <Link href={`/${href}`} className="group">
-      <div className="flex h-full flex-col justify-between rounded-xl border bg-gradient-to-b from-card to-card-foreground p-8 shadow-productCard group-hover:from-card-foreground">
+      <div className="flex h-full flex-col justify-between rounded-xl border bg-gradient-to-b from-card to-card-foreground p-8 shadow-productCard group-hover:to-card-hover">
         <div>
           <strong className="flex items-baseline gap-2 text-[22px] font-semibold">
             {name}

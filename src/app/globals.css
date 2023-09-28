@@ -10,6 +10,7 @@
     --card: 0 0% 100%;
     --card-foreground: 0 0% 98%;
     --card-shadow: 0 0% 98%;
+    --card-hover: 0 0% 0% / .03;
  
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
@@ -49,6 +50,7 @@
     --card: 0 0% 14%;
     --card-foreground: 0 0% 7%;
     --card-shadow: 0 0% 7%;
+    --card-hover: 0 0% 0% / .03;
  
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
