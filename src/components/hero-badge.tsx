@@ -47,7 +47,7 @@ export async function HeroBadge() {
   const randomIndex = Math.floor(Math.random() * randomMessages.length)
 
   return (
-    <Badge variant={'outline'} className="flex h-full w-full gap-2">
+    <Badge variant={'background'} className="flex h-full w-full gap-2">
       {randomMessages[randomIndex].icon}
       <Separator orientation={'vertical'} />
       <p className="line-clamp-1">{randomMessages[randomIndex].message}</p>
