@@ -30,6 +30,8 @@ export async function Hero() {
     },
   ]
 
+  // ! Add badge
+
   return (
     <div className="relative grid place-content-center py-32">
       <div className="absolute inset-0 -z-10 h-full bg-[url('../../public/grid-light.svg')] bg-center bg-repeat [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] dark:bg-[url('../../public/grid-dark.svg')]" />
@@ -37,19 +39,23 @@ export async function Hero() {
         Privacy, Security & Open-Source.
       </h1>
 
-      <p className="px-4 py-3 text-center text-lg font-medium text-muted-foreground">
+      <p className="px-4 py-3 text-center text-base font-medium text-muted-foreground sm:text-lg">
         We provide our users with a secure and private experience. <br />
         Our products together can be an excellent combination. Try it now!
       </p>
 
-      <div className="flex flex-col items-center py-3">
+      <div className="flex flex-col py-4 sm:py-3">
         <FollowUs />
 
-        <div className="mt-2 flex items-center space-x-4">
+        <div className="mt-2 flex flex-col items-center space-y-4 px-8 sm:mx-auto sm:w-1/3 sm:flex-row sm:space-x-4 sm:space-y-0 sm:px-0">
           {socialMediaLinks.map((socialMediaLink) => (
-            <Link key={socialMediaLink.name} href={socialMediaLink.href}>
+            <Link
+              key={socialMediaLink.name}
+              className="w-full"
+              href={socialMediaLink.href}
+            >
               <Button
-                className="flex items-center gap-2"
+                className="flex w-full items-center gap-2"
                 variant={socialMediaLink.variant || 'default'}
               >
                 <socialMediaLink.icon className="h-5 w-5" />
