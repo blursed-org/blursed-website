@@ -19,7 +19,7 @@ export function FollowUs() {
       ]}
       wrapper="span"
       repeat={Infinity}
-      className="text-normal  font-medium text-muted-foreground"
+      className="text-normal font-medium text-muted-foreground"
     />
   )
 }

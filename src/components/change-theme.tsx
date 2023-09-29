@@ -14,7 +14,7 @@ export function ChangeTheme({ className }: { className?: string }) {
   return (
     <Button
       variant={'ghost'}
-      className={cn('p-3 hover:bg-transparent', className)}
+      className={cn('p-2 hover:bg-transparent', className)}
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
     >
       {theme === 'dark' ? (

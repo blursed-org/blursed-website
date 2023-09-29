@@ -2,6 +2,8 @@ import Link from 'next/link'
 import { IoLogoAppleAr as Logo } from 'react-icons/io5'
 import { BiChevronDown as ChevronDown } from 'react-icons/bi'
 import { AiOutlineStar as Star } from 'react-icons/ai'
+import { HiOutlineMenuAlt4 as Menu } from 'react-icons/hi'
+
 import { Button } from './ui/button'
 import { ChangeTheme } from './change-theme'
 
@@ -32,13 +34,15 @@ export async function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur">
-      <div className="container flex h-14 items-center">
+      <div className="flex h-14 items-center px-4 md:container">
         <div className="flex items-center">
-          <Link href={'/'}>
-            <Logo className="mr-6 h-5 w-5" />
-          </Link>
+          <Button variant={'ghost'} className="p-2 hover:bg-transparent">
+            <Link href={'/'}>
+              <Logo className="h-5 w-5 sm:mr-6" />
+            </Link>
+          </Button>
 
-          <nav className="flex items-center space-x-6 text-sm font-medium">
+          <nav className="hidden items-center space-x-6 text-sm font-medium md:flex">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -52,12 +56,20 @@ export async function Header() {
           </nav>
         </div>
 
-        <div className="flex flex-1 items-center justify-end gap-4">
-          <Button variant={'outline'} className="flex gap-2 text-xs">
-            <Star className="h-4 w-4" />
-            Star us on GitHub
+        <div className="flex flex-1 items-center justify-end sm:gap-4">
+          <div className="hidden items-center gap-2 md:flex">
+            <Button variant={'outline'} className="flex gap-2 text-xs">
+              <Star className="h-4 w-4" />
+              Star us on GitHub
+            </Button>
+            <Button>Contact</Button>
+          </div>
+          <Button
+            variant={'ghost'}
+            className="block p-2 hover:bg-transparent md:hidden"
+          >
+            <Menu className="h-5 w-5" />
           </Button>
-          <Button>Contact</Button>
           <ChangeTheme />
         </div>
       </div>
