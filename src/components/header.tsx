@@ -58,7 +58,7 @@ export async function Header() {
             Star us on GitHub
           </Button>
           <Button>Contact</Button>
-          <ChangeTheme className="-ml-4" />
+          <ChangeTheme />
         </div>
       </div>
     </header>
