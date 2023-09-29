@@ -15,42 +15,42 @@ export async function HeroBadge() {
   const randomMessages = [
     {
       message: 'Welcome back to our website!',
-      icon: <HelloHand className="h-[18px] w-[18px]" />,
+      icon: <HelloHand className="h-[18px] w-[18px] shrink-0" />,
     },
 
     {
       message: 'Check our products!',
-      icon: <EmojiFaceHeart className="h-[18px] w-[18px]" />,
+      icon: <EmojiFaceHeart className="h-[18px] w-[18px] shrink-0" />,
     },
 
     {
       message: 'Try our products combination!',
-      icon: <Handshake className="h-[18px] w-[18px]" />,
+      icon: <Handshake className="h-[18px] w-[18px] shrink-0" />,
     },
 
     {
       message: 'Privacy and security for us are important!',
-      icon: <Security className="h-[18px] w-[18px]" />,
+      icon: <Security className="h-[18px] w-[18px] shrink-0" />,
     },
 
     {
       message: 'We are proudly open-source, check our GitHub!',
-      icon: <GitHub className="h-[18px] w-[18px]" />,
+      icon: <GitHub className="h-[18px] w-[18px] shrink-0" />,
     },
 
     {
       message: 'Check our social medias to get closer!',
-      icon: <Wifi className="h-[18px] w-[18px]" />,
+      icon: <Wifi className="h-[18px] w-[18px] shrink-0" />,
     },
   ]
 
   const randomIndex = Math.floor(Math.random() * randomMessages.length)
 
   return (
-    <Badge variant={'outline'} className="mx-auto flex gap-2">
+    <Badge variant={'outline'} className="flex h-full w-full gap-2">
       {randomMessages[randomIndex].icon}
       <Separator orientation={'vertical'} />
-      {randomMessages[randomIndex].message}
+      <p className="line-clamp-1">{randomMessages[randomIndex].message}</p>
     </Badge>
   )
 }
