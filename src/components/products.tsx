@@ -20,8 +20,8 @@ export async function Products() {
   ]
 
   return (
-    <section className="bg-gradient-to-b from-gradient to-gradient-foreground py-6 pb-[100px]">
-      <div className="flex items-center justify-center gap-4">
+    <section className="bg-gradient-to-b from-gradient to-gradient-foreground px-4 py-6 pb-[100px] md:px-12 lg:px-4 2xl:px-0">
+      <div className="flex flex-col items-center justify-center gap-4 lg:flex-row">
         <h2 className="bg-gradient-to-b from-title to-title-foreground bg-clip-text text-center text-[32px] font-bold tracking-tighter text-transparent">
           What are our products?
         </h2>
@@ -30,11 +30,9 @@ export async function Products() {
         </p>
       </div>
 
-      <div className="container mt-8 grid grid-cols-2 gap-6">
+      <div className="container mt-8 grid grid-cols-1 gap-6 lg:grid-cols-2">
         {products.map((product) => (
-          <>
-            <Product key={product.name} {...product} />
-          </>
+          <Product key={product.href} {...product} />
         ))}
       </div>
     </section>

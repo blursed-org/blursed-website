@@ -38,7 +38,7 @@ export async function Header() {
         <div className="flex items-center">
           <Button variant={'ghost'} className="p-2 hover:bg-transparent">
             <Link href={'/'}>
-              <Logo className="h-5 w-5 sm:mr-6" />
+              <Logo className="h-5 w-5 md:mr-6" />
             </Link>
           </Button>
 
