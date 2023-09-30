@@ -2,13 +2,19 @@ import Link from 'next/link'
 import { IoLogoAppleAr as Logo } from 'react-icons/io5'
 import { BiChevronDown as ChevronDown } from 'react-icons/bi'
 import { AiOutlineStar as Star } from 'react-icons/ai'
-import { HiOutlineMenuAlt4 as Menu } from 'react-icons/hi'
 
 import { Button } from './ui/button'
 import { ChangeTheme } from './change-theme'
+import { MobileNav } from './mobile-nav'
+
+export interface NavLink {
+  name: string
+  href: string
+  isDropdown?: boolean
+}
 
 export async function Header() {
-  const navLinks = [
+  const navLinks: NavLink[] = [
     {
       name: 'Organization',
       href: '/organization',
@@ -64,12 +70,8 @@ export async function Header() {
             </Button>
             <Button>Contact</Button>
           </div>
-          <Button
-            variant={'ghost'}
-            className="block p-2 hover:bg-transparent md:hidden"
-          >
-            <Menu className="h-5 w-5" />
-          </Button>
+
+          <MobileNav links={navLinks} />
           <ChangeTheme />
         </div>
       </div>
