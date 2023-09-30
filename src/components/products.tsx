@@ -20,7 +20,7 @@ export async function Products() {
   ]
 
   return (
-    <section className="bg-gradient-to-b from-gradient to-gradient-foreground px-4 py-6 pb-[100px] md:px-12 lg:px-4 2xl:px-0">
+    <section className="border-b bg-gradient-to-b from-gradient to-gradient-foreground px-4 py-6 pb-20 md:px-12 lg:px-4 2xl:px-0">
       <div className="flex flex-col items-center justify-center gap-4 lg:flex-row">
         <h2 className="bg-gradient-to-b from-title to-title-foreground bg-clip-text text-center text-[32px] font-bold tracking-tighter text-transparent">
           What are our products?
