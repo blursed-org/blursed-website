@@ -17,7 +17,7 @@ export async function Tech({ tech, href, icon }: TechProps) {
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger asChild>
-          <Link href={href} target="_blank">
+          <Link href={href} target="_blank" className="hover:opacity-90">
             {icon}
           </Link>
         </TooltipTrigger>

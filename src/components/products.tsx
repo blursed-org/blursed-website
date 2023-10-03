@@ -7,7 +7,7 @@ export async function Products() {
       href: '/pap-clone',
       description:
         'It is a simple, private, secure and real-time chat. Made with by love by us and our community.',
-      features: ['Private and Secure', 'Real-time', 'Open-Source'],
+      features: ['Privacy and Security', 'Real-time', 'Open-Source'],
     },
 
     {
@@ -15,7 +15,7 @@ export async function Products() {
       href: '/cashing',
       description:
         'It is your open-source financial control app, empowering you with essential budgeting, expense tracking, and financial management tools to secure your financial future.',
-      features: ['Private and Secure', 'Open-Source'],
+      features: ['Privacy and Security', 'Open-Source'],
     },
   ]
 

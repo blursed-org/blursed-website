@@ -6,6 +6,7 @@ import {
 } from 'react-icons/si'
 import { GrMysql as MySQL } from 'react-icons/gr'
 import { FaReact as React } from 'react-icons/fa'
+import { CgArrowsScrollV as ArrowDown } from 'react-icons/cg'
 
 import { Tech } from './tech'
 
@@ -44,7 +45,8 @@ export async function TechStack() {
   ]
 
   return (
-    <section className="flex flex-col items-center px-4 py-20">
+    <section className="relative flex flex-col items-center px-4 py-20">
+      <ArrowDown className="absolute top-0 h-7 w-7 text-muted-foreground/80" />
       <h2 className="bg-gradient-to-b from-title to-title-foreground bg-clip-text text-center text-[32px] font-bold tracking-tighter text-transparent">
         Explore the technologies we use!
       </h2>
@@ -52,7 +54,7 @@ export async function TechStack() {
         Try the technologies we trust
       </h3>
 
-      <div className="container mt-16 grid w-full grid-cols-3 place-items-center gap-y-8 sm:max-w-screen-lg sm:grid-cols-6">
+      <div className="container mt-16 grid w-full grid-cols-3 place-items-center gap-y-8 sm:flex sm:max-w-screen-lg sm:justify-center sm:gap-14">
         {TechStackList.map((tech) => (
           <Tech key={tech.tech} {...tech} />
         ))}
