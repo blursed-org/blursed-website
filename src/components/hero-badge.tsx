@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import { AiOutlineGithub as GitHub } from 'react-icons/ai'
 import {
