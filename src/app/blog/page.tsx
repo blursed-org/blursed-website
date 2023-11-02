@@ -13,7 +13,7 @@ export default function BlogPage() {
   )
 
   return (
-    <section className="container">
+    <section className="container relative">
       <div className="flex gap-2 px-4 py-4">
         <Input placeholder="Search an article..." />
         <Button className="flex items-center gap-1" variant={'outline'}>
@@ -23,7 +23,7 @@ export default function BlogPage() {
       </div>
 
       <div className="px-4">
-        <div className="mt-2 grid grid-cols-1 gap-4 pb-20 md:grid-cols-2 lg:grid-cols-[369px_369px_369px]">
+        <div className="mt-2 grid grid-cols-1 gap-4 pb-20 md:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => (
             <PostCard key={post._id} post={post} />
           ))}

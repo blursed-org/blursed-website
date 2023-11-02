@@ -6,7 +6,16 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['yt3.googleusercontent.com', 'assets-global.website-files.com'],
+    domains: [
+      'yt3.googleusercontent.com',
+      'assets-global.website-files.com',
+      'epicode.com',
+      'www.freecodecamp.org',
+      'dovilearn.s3.eu-west-2.amazonaws.com',
+      'www.caltico.es',
+      'code.visualstudio.com',
+      'iaexpert.academy',
+    ],
   },
 }
 
