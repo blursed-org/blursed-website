@@ -15,6 +15,7 @@ const nextConfig = {
       'www.caltico.es',
       'code.visualstudio.com',
       'iaexpert.academy',
+      'github.com',
     ],
   },
 }
