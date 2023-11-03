@@ -48,7 +48,7 @@ export function PostCard({ post }: PostCardProps) {
             <Separator className="my-4" />
 
             <div
-              className="over prose prose-sm prose-blue line-clamp-3 text-foreground"
+              className="prose prose-sm prose-blue line-clamp-3 text-foreground"
               dangerouslySetInnerHTML={{ __html: post.body.html }}
             />
           </div>
