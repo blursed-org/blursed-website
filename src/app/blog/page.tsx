@@ -4,8 +4,8 @@ import { allPosts } from 'contentlayer/generated'
 import { compareDesc } from 'date-fns'
 
 import { Input } from '@/components/ui/input'
-import { PostCard } from './_components/post-card'
 import { useState } from 'react'
+import { PostCard } from './_components/post-card'
 
 export default function BlogPage() {
   const [search, setSearch] = useState('')

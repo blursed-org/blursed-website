@@ -1,12 +1,11 @@
-import { allPosts } from 'contentlayer/generated'
-import { notFound } from 'next/navigation'
 import { Mdx } from '@/components/mdx/mdx-components'
+import { allPosts } from 'contentlayer/generated'
 import Link from 'next/link'
+import { notFound } from 'next/navigation'
 
-import { IoMdArrowBack as ArrowBackIcon } from 'react-icons/io'
-import { format, parseISO } from 'date-fns'
-import Image from 'next/image'
 import { buttonVariants } from '@/components/ui/button'
+import { format, parseISO } from 'date-fns'
+import { IoMdArrowBack as ArrowBackIcon } from 'react-icons/io'
 
 interface PageProps {
   params: {
@@ -49,7 +48,9 @@ export default async function Page({ params }: PageProps) {
             {format(parseISO(post.date), 'eeee, LLLL do, yyyy')}
           </time>
 
-          <h1 className="mb-1 mt-6 text-5xl font-bold">{post.title}</h1>
+          <h1 className="mb-1 mt-6 text-[clamp(28px,5vw,48px)] font-bold">
+            {post.title}
+          </h1>
         </div>
 
         {/* <div className="mx-auto max-w-prose"> */}
