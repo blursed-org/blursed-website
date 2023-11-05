@@ -103,7 +103,11 @@ const components = {
     ...props
   }: React.ImgHTMLAttributes<HTMLImageElement>) => (
     // eslint-disable-next-line @next/next/no-img-element
-    <img className={cn('rounded-md border', className)} alt={alt} {...props} />
+    <img
+      className={cn('my-4 rounded-md border', className)}
+      alt={alt}
+      {...props}
+    />
   ),
   hr: ({ ...props }) => <hr className="my-4 md:my-8" {...props} />,
   table: ({ className, ...props }: React.HTMLAttributes<HTMLTableElement>) => (
