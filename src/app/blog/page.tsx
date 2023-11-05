@@ -3,11 +3,8 @@
 import { allPosts } from 'contentlayer/generated'
 import { compareDesc } from 'date-fns'
 
-import { SearchIcon } from 'lucide-react'
-
-import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { PostCard } from './post-card'
+import { PostCard } from './_components/post-card'
 import { useState } from 'react'
 
 export default function BlogPage() {

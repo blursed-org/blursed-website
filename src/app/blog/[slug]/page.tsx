@@ -1,6 +1,6 @@
 import { allPosts } from 'contentlayer/generated'
 import { notFound } from 'next/navigation'
-import { Mdx } from '@/components/ui/mdx-components'
+import { Mdx } from '@/components/mdx/mdx-components'
 import Link from 'next/link'
 
 import { IoMdArrowBack as ArrowBackIcon } from 'react-icons/io'
