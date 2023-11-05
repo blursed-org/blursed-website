@@ -5,6 +5,7 @@ import { useMDXComponent } from 'next-contentlayer/hooks'
 import { cn } from '@/lib/utils'
 import { Callout } from '@/components/mdx/callout'
 import { MdxCard } from '@/components/mdx/mdx-card'
+import Link from 'next/link'
 
 const components = {
   h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
@@ -63,6 +64,15 @@ const components = {
   ),
   a: ({ className, ...props }: React.HTMLAttributes<HTMLAnchorElement>) => (
     <a
+      className={cn(
+        'font-medium text-blue-600 underline underline-offset-4',
+        className,
+      )}
+      {...props}
+    />
+  ),
+  Link: ({ className, ...props }: React.ComponentProps<typeof Link>) => (
+    <Link
       className={cn(
         'font-medium text-blue-600 underline underline-offset-4',
         className,

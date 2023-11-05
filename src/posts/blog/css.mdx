@@ -1,11 +1,73 @@
 ---
-title: What is CSS?
+title: O que é CSS?
 image: "/CSS.png"
-description: In this article we will discover what is CSS and what it is capable of.
+description: Neste artigo é abordado o que é CSS, para o que é usada e do que é capaz.
 date: 2023-11-02
 ---
 
-Tempus natoque [fringilla](https://github.com/tellay) sed eleifend lacinia dapibus cursus.
+`CSS`, ou (Cascading Style Sheets) é uma linguagem de `estilos` cujo a sua utilização é adicionar estilos a uma página <Link href="/blog/html">web</Link>.
 
-* Features
-* Online
+## Utilização
+
+Pode ser utilizada `internamente` no arquivo de `HTML` ou `externamente` utilizando o elemento `<link>`
+
+### Exemplo de utilização internamente
+```html showLineNumbers {6-17}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Título</title>
+    
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>O meu primeiro cabeçalho.</h1>
+    <p>O meu primeiro parágrafo.</p>
+  </body>
+</html>
+```
+
+### Exemplo de utilização externamente
+
+```html {6}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Título</title>
+    
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>O meu primeiro cabeçalho.</h1>
+    <p>O meu primeiro parágrafo.</p>
+  </body>
+</html>
+```
+
+```css title="styles.css" showLineNumbers
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+```
+
+## Documentação
+
+* [Mozilla Developer](https://developer.mozilla.org/en-US/docs/Web/CSS)
