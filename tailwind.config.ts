@@ -95,6 +95,13 @@ module.exports = {
         radialGradient:
           'radial-gradient(50% 50% at 50% 50%,hsl(var(--gradient-foreground)),hsl(var(--gradient)));',
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: '100%', // add required value here
+          }
+        }
+      }
     },
   },
   plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography')],

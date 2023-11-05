@@ -8,6 +8,7 @@ import { format, parseISO } from 'date-fns'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import { useEffect, useState } from 'react'
+import { Mdx } from '@/components/ui/mdx-components'
 
 interface PostCardProps {
   post: Post
@@ -23,7 +24,7 @@ export function PostCard({ post }: PostCardProps) {
   return (
     isLoading === false && (
       <Link
-        href={`/blog/${post.url}`}
+        href={post.slug}
         className="h-full rounded-lg border bg-background p-[6px]"
       >
         <div className="flex h-full flex-col justify-between">
@@ -47,10 +48,9 @@ export function PostCard({ post }: PostCardProps) {
 
             <Separator className="my-4" />
 
-            <div
-              className="prose prose-sm prose-blue line-clamp-3 text-foreground"
-              dangerouslySetInnerHTML={{ __html: post.body.html }}
-            />
+            <div className="line-clamp-6">
+              <Mdx code={post.body.code} />
+            </div>
           </div>
 
           <Button className="mt-2 w-full" variant={'secondary'}>
