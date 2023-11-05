@@ -48,7 +48,7 @@ export function PostCard({ post }: PostCardProps) {
 
             <Separator className="my-4" />
 
-            <div className="line-clamp-6">
+            <div className="line-clamp-4">
               <Mdx code={post.body.code} />
             </div>
           </div>
