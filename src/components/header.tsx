@@ -28,8 +28,7 @@ export async function Header() {
 
     {
       name: 'About me',
-      href: '/aboutme',
-      isDropdown: true,
+      href: '/about',
     },
 
     {
