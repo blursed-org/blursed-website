@@ -50,6 +50,7 @@ export function MobileNav({ links, components }: MobileNavProps) {
                 className: '-mx-2 -mt-2 w-fit !p-2',
               })}
               href={'/'}
+              onClick={() => setIsOpen(!open)}
             >
               <Logo className="h-5 w-5" />
             </Link>
