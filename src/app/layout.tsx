@@ -8,8 +8,11 @@ import { Providers } from '@/components/providers'
 
 import { Header } from '@/components/header'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
-const robotoMono = JetBrains_Mono({
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
+const jetBrainsMono = JetBrains_Mono({
   subsets: ['latin'],
   variable: '--font-jetbrains-mono',
 })
@@ -26,7 +29,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${robotoMono.variable} ${inter.variable} font-inter`}>
+      <body
+        className={`${jetBrainsMono.variable} ${inter.variable} font-inter`}
+      >
         <Providers>
           <Header />
           {children}

@@ -1,11 +1,19 @@
 'use client'
 import { HiOutlineMenuAlt4 as Menu } from 'react-icons/hi'
 
-import { NavLink } from './header'
-import { Button } from './ui/button'
+import { NavComponent, NavLink } from './header'
+import { Button, buttonVariants } from './ui/button'
 
 import { IoLogoAppleAr as Logo } from 'react-icons/io5'
 
+import Link from 'next/link'
+import { useState } from 'react'
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from './ui/accordion'
 import {
   Sheet,
   SheetContent,
@@ -14,14 +22,13 @@ import {
   SheetTitle,
   SheetTrigger,
 } from './ui/sheet'
-import Link from 'next/link'
-import { useState } from 'react'
 
 interface MobileNavProps {
   links: NavLink[]
+  components: NavComponent[]
 }
 
-export function MobileNav({ links }: MobileNavProps) {
+export function MobileNav({ links, components }: MobileNavProps) {
   const [open, setIsOpen] = useState(false)
 
   return (
@@ -29,15 +36,23 @@ export function MobileNav({ links }: MobileNavProps) {
       <SheetTrigger asChild>
         <Button
           variant={'ghost'}
-          className="block p-2 hover:bg-transparent md:hidden"
+          className="block p-2 hover:bg-transparent nav:hidden"
         >
           <Menu className="h-5 w-5" />
         </Button>
       </SheetTrigger>
       <SheetContent side={'top'}>
         <SheetHeader>
-          <SheetTitle>
-            <Logo className="h-5 w-5" />
+          <SheetTitle className="flex items-center">
+            <Link
+              className={buttonVariants({
+                variant: 'link',
+                className: '-mx-2 -mt-2 w-fit !p-2',
+              })}
+              href={'/'}
+            >
+              <Logo className="h-5 w-5" />
+            </Link>
           </SheetTitle>
           <SheetDescription className="flex flex-col divide-y text-start">
             {links.map((link) => (
@@ -50,6 +65,26 @@ export function MobileNav({ links }: MobileNavProps) {
                 {link.name}
               </Link>
             ))}
+
+            <Accordion type="single" collapsible>
+              <AccordionItem value="components">
+                <AccordionTrigger>PAP</AccordionTrigger>
+                <AccordionContent
+                  className="flex flex-col gap-2"
+                  onClick={() => setIsOpen(!open)}
+                >
+                  {components.map((component) => (
+                    <Link
+                      key={component.title}
+                      className="py-4"
+                      href={component.href}
+                    >
+                      {component.title}
+                    </Link>
+                  ))}
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </SheetDescription>
         </SheetHeader>
       </SheetContent>
