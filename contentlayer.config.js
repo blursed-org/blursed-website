@@ -8,7 +8,7 @@ import remarkGfm from 'remark-gfm'
 const computedFields = {
   slug: {
     type: 'string',
-    resolve: (doc) => `/epm/blog/${doc._raw.flattenedPath}`,
+    resolve: (doc) => `/epm/${doc._raw.flattenedPath}`,
   },
   slugAsParams: {
     type: 'string',

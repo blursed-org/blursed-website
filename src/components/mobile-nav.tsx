@@ -67,21 +67,20 @@ export function MobileNav({ links, components }: MobileNavProps) {
             ))}
 
             <Accordion type="single" collapsible>
-              <AccordionItem value="components">
+              <AccordionItem value="item-1">
                 <AccordionTrigger>PAP</AccordionTrigger>
-                <AccordionContent
-                  className="flex flex-col gap-2"
-                  onClick={() => setIsOpen(!open)}
-                >
-                  {components.map((component) => (
-                    <Link
-                      key={component.title}
-                      className="py-4"
-                      href={component.href}
-                    >
-                      {component.title}
-                    </Link>
-                  ))}
+                <AccordionContent onClick={() => setIsOpen(!open)}>
+                  <div className="flex flex-col gap-2">
+                    {components.map((component) => (
+                      <Link
+                        className="py-4"
+                        key={component.title}
+                        href={component.href}
+                      >
+                        {component.title}
+                      </Link>
+                    ))}
+                  </div>
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

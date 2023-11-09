@@ -35,7 +35,7 @@ export default async function Page({ params }: PageProps) {
                 'flex w-fit gap-2 !p-0 text-sm font-normal text-foreground/50 hover:text-foreground/90',
             })}
             // className="flex w-fit items-center gap-2 text-sm font-medium hover:text-foreground/90"
-            href="/blog"
+            href="/epm/blog"
           >
             <ArrowBackIcon className="h-4 w-4" />
             Back to blog
