@@ -8,10 +8,8 @@ import { Providers } from '@/components/providers'
 
 import { Header } from '@/components/header'
 
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-})
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+
 const jetBrainsMono = JetBrains_Mono({
   subsets: ['latin'],
   variable: '--font-jetbrains-mono',

@@ -3,19 +3,24 @@ import { Product } from './product'
 export async function Products() {
   const products = [
     {
-      name: 'PapClone',
-      href: '/pap-clone',
+      name: 'MenuTree',
+      href: '/menutree',
       description:
-        'It is a simple, private, secure and real-time chat. Made with by love by us and our community.',
-      features: ['Privacy and Security', 'Real-time', 'Open-Source'],
+        "Your restaurant in one Link. Less papers, just a QRCode away. Join us, use less papers and share your meals. Let's help the Planet to help us.",
+      features: ['Privacy and Security', 'Help the Planet', 'Open-Source'],
     },
 
     {
-      name: 'Cashing',
-      href: '/cashing',
+      name: 'Rosie AI',
+      href: '/rosieai',
       description:
-        'It is your open-source financial control app, empowering you with essential budgeting, expense tracking, and financial management tools to secure your financial future.',
-      features: ['Privacy and Security', 'Open-Source'],
+        "Your best friend. Talk to me when your are alone and I will be together with you always. Don't worry to text me any time. I am here for you.",
+      features: [
+        'Security',
+        'Customizable',
+        'GPT-3.5-Turbo Powered',
+        'Open-Source',
+      ],
     },
   ]
 

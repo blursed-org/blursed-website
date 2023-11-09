@@ -1,7 +1,7 @@
 import {
   SiTypescript as TypeScript,
   SiNextdotjs as Nextjs,
-  SiFastify as Fastify,
+  SiBun as Bun,
   SiPrisma as Prisma,
 } from 'react-icons/si'
 import { GrMysql as MySQL } from 'react-icons/gr'
@@ -28,9 +28,9 @@ export async function TechStack() {
       icon: <Nextjs className="h-9 w-9" />,
     },
     {
-      tech: 'Fastify',
-      href: 'https://www.fastify.io/',
-      icon: <Fastify className="h-9 w-9" />,
+      tech: 'Bun',
+      href: 'https://bun.sh/',
+      icon: <Bun className="h-9 w-9" />,
     },
     {
       tech: 'Prisma',
