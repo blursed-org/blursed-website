@@ -6,7 +6,7 @@ import {
 } from 'react-icons/ai'
 
 import { FollowUs } from './follow-us'
-import { Button, ButtonProps } from './ui/button'
+import { Button, ButtonProps, buttonVariants } from './ui/button'
 
 import { HeroBadge } from './hero-badge'
 
@@ -56,16 +56,15 @@ export async function Hero() {
           {socialMediaLinks.map((socialMediaLink) => (
             <Link
               key={socialMediaLink.name}
-              className="w-full"
+              className={buttonVariants({
+                variant: socialMediaLink.variant || 'default',
+                className: 'flex w-full items-center gap-2',
+              })}
               href={socialMediaLink.href}
+              target="_blank"
             >
-              <Button
-                className="flex w-full items-center gap-2"
-                variant={socialMediaLink.variant || 'default'}
-              >
-                <socialMediaLink.icon className="h-5 w-5" />
-                {socialMediaLink.name}
-              </Button>
+              <socialMediaLink.icon className="h-5 w-5" />
+              {socialMediaLink.name}
             </Link>
           ))}
         </div>
