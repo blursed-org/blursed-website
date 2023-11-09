@@ -1,3 +1,4 @@
+'use client'
 import { HiOutlineMenuAlt4 as Menu } from 'react-icons/hi'
 
 import { NavLink } from './header'
@@ -14,14 +15,17 @@ import {
   SheetTrigger,
 } from './ui/sheet'
 import Link from 'next/link'
+import { useState } from 'react'
 
 interface MobileNavProps {
   links: NavLink[]
 }
 
-export async function MobileNav({ links }: MobileNavProps) {
+export function MobileNav({ links }: MobileNavProps) {
+  const [open, setIsOpen] = useState(false)
+
   return (
-    <Sheet>
+    <Sheet open={open} onOpenChange={setIsOpen}>
       <SheetTrigger asChild>
         <Button
           variant={'ghost'}
@@ -40,6 +44,7 @@ export async function MobileNav({ links }: MobileNavProps) {
               <Link
                 key={link.href}
                 href={link.href}
+                onClick={() => setIsOpen(!open)}
                 className="flex items-center space-x-2 py-4 text-foreground/60 transition-colors hover:text-foreground/80"
               >
                 {link.name}
