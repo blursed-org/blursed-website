@@ -49,7 +49,7 @@ export async function WhoWeAre() {
             place for us!
           </p>
 
-          <div className="mt-8 flex flex-col">
+          <div className="mt-8 flex w-full flex-col">
             {orgFeatures.map((feature) => (
               <Feature key={feature.title} feature={feature} />
             ))}
