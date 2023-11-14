@@ -31,7 +31,7 @@ export default function RootLayout({
         className={`${jetBrainsMono.variable} ${inter.variable} font-inter`}
       >
         <Providers>
-          <Header />
+          {/* <Header /> */}
           {children}
         </Providers>
       </body>
