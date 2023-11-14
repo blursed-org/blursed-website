@@ -4,7 +4,7 @@ export async function Products() {
   const products = [
     {
       name: 'MenuTree',
-      href: '/menutree',
+      href: 'https://tellay-menutree.vercel.app',
       description:
         "Your restaurant in one Link. Less papers, just a QRCode away. Join us, use less papers and share your meals. Let's help the Planet to help us.",
       features: ['Privacy and Security', 'Help the Planet', 'Open-Source'],

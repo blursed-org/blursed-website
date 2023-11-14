@@ -2,6 +2,7 @@ import Link from 'next/link'
 
 import { FiExternalLink as ExternalLink } from 'react-icons/fi'
 import { BsCheckLg as Check } from 'react-icons/bs'
+import { features } from 'process'
 
 interface productProps {
   logo?: React.ElementType
@@ -19,7 +20,7 @@ export async function Product({
   features,
 }: productProps) {
   return (
-    <Link href={`/${href}`} className="group">
+    <Link href={href} target="_blank" className="group">
       <div className="flex h-full flex-col justify-between rounded-xl border bg-gradient-to-b from-card to-card-foreground p-8 shadow-productCard group-hover:to-card-hover">
         <div>
           <strong className="flex items-baseline gap-2 text-[22px] font-semibold">

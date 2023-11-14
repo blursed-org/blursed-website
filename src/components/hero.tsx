@@ -6,7 +6,7 @@ import {
 } from 'react-icons/ai'
 
 import { FollowUs } from './follow-us'
-import { Button, ButtonProps, buttonVariants } from './ui/button'
+import { ButtonProps, buttonVariants } from './ui/button'
 
 import { HeroBadge } from './hero-badge'
 

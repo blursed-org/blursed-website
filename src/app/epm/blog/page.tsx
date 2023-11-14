@@ -27,7 +27,7 @@ export default function BlogPage() {
     <section className="container">
       <div className="absolute inset-0 -z-10 h-2/3 bg-[url('../../public/grid-light.svg')] bg-center bg-repeat [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] dark:bg-[url('../../public/grid-dark.svg')]" />
 
-      <div className="flex gap-2 px-4 py-4">
+      <div className="p-4">
         <Input
           placeholder="Search an article..."
           onChange={(e) => setSearch(e.target.value)}

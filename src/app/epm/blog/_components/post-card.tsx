@@ -14,7 +14,7 @@ export function PostCard({ post }: PostCardProps) {
   return (
     <Link
       href={post.slug}
-      className="h-full rounded-lg border bg-background p-[6px]"
+      className="h-full rounded-lg border bg-background p-[6px] shadow-lg shadow-black/5 transition hover:-translate-y-1 hover:shadow-black/10"
     >
       <div className="flex h-[198px] flex-col justify-between">
         <div className="flex flex-col p-3">
@@ -42,7 +42,10 @@ export function PostCard({ post }: PostCardProps) {
             </div> */}
         </div>
 
-        <Button className="mt-2 w-full" variant={'secondary'}>
+        <Button
+          className="mt-2 w-full opacity-80 transition hover:opacity-100"
+          variant={'secondary'}
+        >
           Read More
         </Button>
       </div>
