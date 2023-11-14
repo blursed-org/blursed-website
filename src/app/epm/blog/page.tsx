@@ -39,6 +39,12 @@ export default function BlogPage() {
           {filteredPosts.map((post) => (
             <PostCard key={post._id} post={post} />
           ))}
+
+          {search.length > 0 && filteredPosts.length === 0 && (
+            <p className="col-span-1 text-center text-secondary-foreground/70 md:col-span-2 lg:col-span-3">
+              No posts found with {search}!
+            </p>
+          )}
         </div>
       </div>
     </section>
