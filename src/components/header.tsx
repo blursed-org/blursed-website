@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils'
 import React from 'react'
 import { ChangeTheme } from './change-theme'
 import { MobileNav } from './mobile-nav'
-import { Button } from './ui/button'
+import { Button, buttonVariants } from './ui/button'
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -34,18 +34,17 @@ export interface NavComponent {
 export function Header() {
   const navLinks: NavLink[] = [
     {
-      name: 'Organization',
+      name: 'Organização',
       href: '/organization',
     },
 
     {
-      name: 'Products',
+      name: 'Produtos',
       href: '/products',
-      isDropdown: true,
     },
 
     {
-      name: 'About me',
+      name: 'Sobre mim',
       href: '/about',
     },
   ]
@@ -56,16 +55,6 @@ export function Header() {
       href: '/epm/blog',
       description:
         'Tópicos técnicos que foram abordados enquanto frequentei o curso.',
-    },
-    {
-      title: 'TGPSI Ref',
-      href: '/epm/ref',
-      description: 'Referêncial do curso que frequentei (TGPSI)',
-    },
-    {
-      title: 'Plano de Estágio',
-      href: '/epm/internship',
-      description: 'Plano de ambos os estágios que experênciei.',
     },
     {
       title: 'PAP',
@@ -79,11 +68,15 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur">
       <div className="flex h-14 items-center px-4 md:container">
         <div className="flex items-center">
-          <Button variant={'ghost'} className="p-2 hover:bg-transparent">
-            <Link href={'/'}>
-              <Logo className="h-5 w-5 md:mr-6" />
-            </Link>
-          </Button>
+          <Link
+            href={'/'}
+            className={buttonVariants({
+              variant: 'link',
+              className: 'hover:bg-transparent md:mr-6',
+            })}
+          >
+            <Logo className="h-5 w-5" />
+          </Link>
 
           <NavigationMenu className="hidden nav:block">
             <NavigationMenuList>
@@ -120,11 +113,18 @@ export function Header() {
 
         <div className="flex flex-1 items-center justify-end sm:gap-4">
           <div className="hidden items-center gap-2 nav:flex">
-            <Button variant={'outline'} className="flex gap-2 text-xs">
+            <Link
+              className={buttonVariants({
+                variant: 'outline',
+                className: 'flex gap-2 text-xs',
+              })}
+              href={'https://github.com/tellay/pap-website'}
+              target="_blank"
+            >
               <Star className="h-4 w-4" />
-              Star us on GitHub
-            </Button>
-            <Button>Contact</Button>
+              Repostório no GitHub
+            </Link>
+            <Button>Contato</Button>
           </div>
 
           <MobileNav links={navLinks} components={navComponents} />

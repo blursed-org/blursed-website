@@ -6,18 +6,18 @@ export async function Products() {
       name: 'MenuTree',
       href: 'https://tellay-menutree.vercel.app',
       description:
-        "Your restaurant in one Link. Less papers, just a QRCode away. Join us, use less papers and share your meals. Let's help the Planet to help us.",
-      features: ['Privacy and Security', 'Help the Planet', 'Open-Source'],
+        'O seu restaurante em um link. Menos papéis, apenas a um QRCode de distância. Junte-se a nós, use menos papéis e compartilhe os seus menus. Vamos ajudar o Planeta para nos ajudarmos.',
+      features: ['Privacidade e Segurança', 'Ajude o Planeta', 'Open-Source'],
     },
 
     {
       name: 'Rosie AI',
       href: '/rosieai',
       description:
-        "Your best friend. Talk to me when your are alone and I will be together with you always. Don't worry to text me any time. I am here for you.",
+        'A sua melhor amiga. Fale comigo quando estiver sozinho(a). Estarei sempre consigo. Mande mensagem quando achar necessário, estou aqui para si.',
       features: [
-        'Security',
-        'Customizable',
+        'Segurança',
+        'Customizável',
         'GPT-3.5-Turbo Powered',
         'Open-Source',
       ],
@@ -28,10 +28,10 @@ export async function Products() {
     <section className="border-b bg-gradient-to-b from-gradient to-gradient-foreground px-4 py-6 pb-20 md:px-12 lg:px-4 2xl:px-0">
       <div className="flex flex-col items-center justify-center gap-4 lg:flex-row">
         <h2 className="bg-gradient-to-b from-title to-title-foreground bg-clip-text text-center text-[32px] font-bold tracking-tighter text-transparent">
-          What are our products?
+          Quais são os nossos produtos?
         </h2>
         <p className="tracking-tight text-muted-foreground">
-          Try our products combination!
+          Pronto para descobrir mais?
         </p>
       </div>
 

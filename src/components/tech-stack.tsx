@@ -48,10 +48,10 @@ export async function TechStack() {
     <section className="relative flex flex-col items-center px-4 py-20">
       <ArrowDown className="absolute top-0 h-7 w-7 text-muted-foreground/80" />
       <h2 className="bg-gradient-to-b from-title to-title-foreground bg-clip-text text-center text-[32px] font-bold tracking-tighter text-transparent">
-        Explore the technologies we use!
+        Explore as tecnologias que usamos!
       </h2>
       <h3 className="tracking-tight text-muted-foreground">
-        Try the technologies we trust
+        Experimente as tecnologias que nos acreditamos
       </h3>
 
       <div className="container mt-16 grid w-full grid-cols-3 place-items-center gap-y-8 sm:flex sm:max-w-screen-lg sm:justify-center sm:gap-14">

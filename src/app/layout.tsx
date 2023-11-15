@@ -1,5 +1,6 @@
 import './globals.css'
 import './styles/mdx.css'
+
 import type { Metadata } from 'next'
 // eslint-disable-next-line camelcase
 import { Inter, JetBrains_Mono } from 'next/font/google'

@@ -6,15 +6,15 @@ export function FollowUs() {
   return (
     <TypeAnimation
       sequence={[
-        '-> Follow us on GitHub',
+        '-> Siga-nos no GitHub',
         7500,
-        '-> Follow us on LinkedIn',
+        '-> Siga-nos no LinkedIn',
         7500,
-        '-> Follow us on X',
+        '-> Siga-nos no X',
         7500,
-        '-> Follow us on Instagram',
+        '-> Siga-nos no Instagram',
         7500,
-        '-> Follow us on Facebook',
+        '-> Siga-nos no Facebook',
         750,
       ]}
       wrapper="span"

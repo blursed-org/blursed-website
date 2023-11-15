@@ -21,7 +21,7 @@ export async function Hero() {
   const socialMediaLinks: SocialMediaLink[] = [
     {
       name: 'GitHub',
-      href: 'https://github.com/',
+      href: 'https://github.com/tellay/pap-website',
       icon: GitHub,
     },
     {
@@ -41,12 +41,12 @@ export async function Hero() {
       </div>
 
       <h1 className="bg-gradient-to-b from-title to-title-foreground bg-clip-text px-6 py-3 text-center text-[48px] font-extrabold tracking-tighter text-transparent sm:text-[52px] md:text-[64px]">
-        Privacy, Security & Open-Source.
+        Privacidade, Segurança & Open-Source.
       </h1>
 
       <p className="px-4 py-3 text-center text-base font-medium text-muted-foreground sm:text-lg">
-        We provide our users with a secure and private experience. <br />
-        Our products together can be an excellent combination. Try it now!
+        Nós provemos segurança e privacidade aos nossos utilizadores. <br />
+        Conheça mais sobre os nossos produtos. Experimente agora! Our products
       </p>
 
       <div className="flex flex-col py-4 sm:py-3">

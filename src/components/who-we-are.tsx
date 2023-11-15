@@ -14,23 +14,23 @@ export interface Feature {
 export async function WhoWeAre() {
   const orgFeatures: Feature[] = [
     {
-      title: 'Open Source',
+      title: 'Open-Source',
       description:
-        'All of our products are open source, check our GitHub repository and contribute!',
+        'Todos os nossos produtos são open-source, passe pelo nosso repositório no GitHub e contribua!',
       icon: <GitHub className="h-8 w-8 shrink-0" />,
     },
 
     {
-      title: 'Privacy and Security',
+      title: 'Privacidade e Segurança',
       description:
-        'We provide our users with a secure and private experience. If you notice something wrong, let us know. We will fix it!',
+        'Nós provemos uma experiência segurança e privada. Se notar algo errado, diga-nos. Nos vamos corrigir!',
       icon: <Security className="h-8 w-8 shrink-0" />,
     },
 
     {
-      title: 'No Payments',
+      title: 'Sem Pagamentos',
       description:
-        'We are totally free, we do not have any ads or subscriptions.',
+        'Somos totalmente de graça, não temos anúncios nem subscrições.',
       icon: <NoMoney className="h-8 w-8 shrink-0" />,
     },
   ]
@@ -40,13 +40,13 @@ export async function WhoWeAre() {
       <div className="container">
         <div className="flex flex-col items-center">
           <h2 className="bg-gradient-to-b from-title to-title-foreground bg-clip-text text-center text-[32px] font-bold tracking-tighter text-transparent">
-            Who we are and what we do?
+            Quem somos e o que fazemos?
           </h2>
 
           <p className="mt-8 max-w-2xl text-center text-base font-normal text-muted-foreground">
-            OpenTech is an non profit organization. We believe in power of the
-            web and of open source. Web must be an free, private and secure
-            place for us!
+            OpenTech é uma organization sem fins lucrativos. Acreditamos no
+            poder da internet e dos projetos open-source. Achamos que a web deve
+            ser grátis, privada e um local seguro para nós todos!
           </p>
 
           <div className="mt-8 flex w-full flex-col">

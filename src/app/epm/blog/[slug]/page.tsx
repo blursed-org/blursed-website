@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation'
 import { buttonVariants } from '@/components/ui/button'
 import { format, parseISO } from 'date-fns'
 import { IoMdArrowBack as ArrowBackIcon } from 'react-icons/io'
+import { pt } from 'date-fns/locale'
 
 interface PageProps {
   params: {
@@ -42,10 +43,11 @@ export default async function Page({ params }: PageProps) {
           </Link>
 
           <time
-            className="mt-12 block text-sm text-foreground/60"
+            className="mt-12 block text-sm capitalize text-foreground/60"
             dateTime={post.date}
           >
-            {format(parseISO(post.date), 'eeee, LLLL do, yyyy')}
+            {/* {format(parseISO(post.date), 'eeeE, LLLL do, yyyy', { locale: pt })} */}
+            {format(parseISO(post.date), 'EEEE, d MMMM yyyy', { locale: pt })}
           </time>
 
           <h1 className="mb-1 mt-6 text-[clamp(28px,5vw,48px)] font-bold">

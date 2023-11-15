@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { Post } from 'contentlayer/generated'
 import { format, parseISO } from 'date-fns'
+import { pt } from 'date-fns/locale'
 
 import { Button } from '@/components/ui/button'
 
@@ -27,8 +28,11 @@ export function PostCard({ post }: PostCardProps) {
             /> */}
 
           <div className="mt-0 flex items-center">
-            <time className="text-sm text-foreground/60" dateTime={post.date}>
-              {format(parseISO(post.date), 'LLLL do, yyyy')}
+            <time
+              className="text-sm capitalize text-foreground/60"
+              dateTime={post.date}
+            >
+              {format(parseISO(post.date), 'd MMMM yyyy', { locale: pt })}
             </time>
           </div>
 
