@@ -39,7 +39,7 @@ export default async function Page({ params }: PageProps) {
             href="/epm/blog"
           >
             <ArrowBackIcon className="h-4 w-4" />
-            Back to blog
+            Voltar ao blog
           </Link>
 
           <time
