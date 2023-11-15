@@ -2,7 +2,6 @@ import { AiOutlineGithub as GitHub } from 'react-icons/ai'
 import {
   //   FaRegGrinHearts as EmojiFaceHeart,
   PiHandWaving as HelloHand,
-  PiHandshake as Handshake,
 } from 'react-icons/pi'
 import { BsEmojiSmile as EmojiFaceHeart } from 'react-icons/bs'
 
@@ -14,32 +13,27 @@ import { Separator } from './ui/separator'
 export async function HeroBadge() {
   const randomMessages = [
     {
-      message: 'Welcome back to our website!',
+      message: 'Bem-vindo(a) de volta ao nosso website.',
       icon: <HelloHand className="h-[18px] w-[18px] shrink-0" />,
     },
 
     {
-      message: 'Check our products!',
+      message: 'Experimente os nossos products!',
       icon: <EmojiFaceHeart className="h-[18px] w-[18px] shrink-0" />,
     },
 
     {
-      message: 'Try our products combination!',
-      icon: <Handshake className="h-[18px] w-[18px] shrink-0" />,
-    },
-
-    {
-      message: 'Privacy and security for us are important!',
+      message: 'Privacidade e segurança são importantes para nós!',
       icon: <Security className="h-[18px] w-[18px] shrink-0" />,
     },
 
     {
-      message: 'We are proudly open-source, check our GitHub!',
+      message: 'Somos orgulhosamente open-source, visite o nosso GitHub!',
       icon: <GitHub className="h-[18px] w-[18px] shrink-0" />,
     },
 
     {
-      message: 'Check our social medias to get closer!',
+      message: 'Passe pelas nossas redes sociais para ficar mais perto!',
       icon: <Wifi className="h-[18px] w-[18px] shrink-0" />,
     },
   ]
