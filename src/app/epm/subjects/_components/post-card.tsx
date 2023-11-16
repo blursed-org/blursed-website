@@ -50,7 +50,7 @@ export function PostCard({ post }: PostCardProps) {
           className="mt-2 w-full opacity-80 transition hover:opacity-100"
           variant={'secondary'}
         >
-          Read More
+          Ler Mais
         </Button>
       </div>
     </Link>

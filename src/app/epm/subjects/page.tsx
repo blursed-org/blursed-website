@@ -29,7 +29,7 @@ export default function BlogPage() {
 
       <div className="p-4">
         <Input
-          placeholder="Search an article..."
+          placeholder="Pesquisa uma matéria..."
           onChange={(e) => setSearch(e.target.value)}
         />
       </div>
