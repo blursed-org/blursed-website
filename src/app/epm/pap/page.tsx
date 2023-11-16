@@ -1,4 +1,5 @@
 import { Separator } from '@/components/ui/separator'
+import { components } from '@/components/mdx/mdx-components'
 
 export default function PAPPage() {
   return (
@@ -7,9 +8,7 @@ export default function PAPPage() {
 
       <div className="container">
         <div className="mx-auto max-w-[860px] px-4 py-6">
-          <h2 className="bg-gradient-to-b from-title to-title-foreground bg-clip-text text-[24px] font-bold leading-none tracking-tighter text-transparent">
-            Referêncial de TGPSI
-          </h2>
+          <components.h1>Referêncial de TGPSI</components.h1>
           <iframe
             className="mt-4 aspect-video w-full rounded-md"
             src="/tgpsi_ref.pdf"
@@ -17,9 +16,7 @@ export default function PAPPage() {
 
           <Separator className="my-8" />
 
-          <h2 className="bg-gradient-to-b from-title to-title-foreground bg-clip-text text-[24px] font-bold leading-none tracking-tighter text-transparent">
-            Plano de Estágio
-          </h2>
+          <components.h1>Plano de Estágio</components.h1>
           <iframe
             className="mt-4 aspect-video w-full rounded-md"
             src="/plano_estagio.pdf"

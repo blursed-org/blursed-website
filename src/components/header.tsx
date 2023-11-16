@@ -34,15 +34,13 @@ export interface NavComponent {
 export function Header() {
   const navLinks: NavLink[] = [
     {
-      name: 'Organização',
-      href: '/organization',
-    },
-
-    {
       name: 'Produtos',
       href: '/products',
     },
-
+    {
+      name: 'Organização',
+      href: '/organization',
+    },
     {
       name: 'Sobre mim',
       href: '/about',
