@@ -42,7 +42,7 @@ export default function BlogPage() {
 
           {search.length > 0 && filteredPosts.length === 0 && (
             <p className="col-span-1 text-center text-sm text-secondary-foreground/70 md:col-span-2 lg:col-span-3">
-              No posts found with {search}!
+              Nenhum resultado encontrado para {search}!
             </p>
           )}
         </div>
