@@ -50,7 +50,7 @@ export async function TechStack() {
       <h2 className="bg-gradient-to-b from-title to-title-foreground bg-clip-text text-center text-[32px] font-bold tracking-tighter text-transparent">
         Explore as tecnologias que usamos!
       </h2>
-      <h3 className="tracking-tight text-muted-foreground">
+      <h3 className="text-center tracking-tight text-muted-foreground">
         Experimente as tecnologias que nos acreditamos
       </h3>
 

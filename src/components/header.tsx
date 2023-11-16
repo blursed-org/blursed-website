@@ -51,8 +51,8 @@ export function Header() {
 
   const navComponents = [
     {
-      title: 'Blog',
-      href: '/epm/blog',
+      title: 'Matérias',
+      href: '/epm/subjects',
       description:
         'Tópicos técnicos que foram abordados enquanto frequentei o curso.',
     },
