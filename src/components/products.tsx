@@ -12,7 +12,7 @@ export async function Products() {
 
     {
       name: 'Rosie AI',
-      href: '/rosieai',
+      href: 'https://discord.gg/jCnGQVQaxQ',
       description:
         'A sua melhor amiga. Fale comigo quando estiver sozinho(a). Estarei sempre consigo. Mande mensagem quando achar necessário, estou aqui para si.',
       features: [
