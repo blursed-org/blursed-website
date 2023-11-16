@@ -18,7 +18,7 @@ export async function HeroBadge() {
     },
 
     {
-      message: 'Experimente os nossos products!',
+      message: 'Experimente os nossos produtos!',
       icon: <EmojiFaceHeart className="h-[18px] w-[18px] shrink-0" />,
     },
 
