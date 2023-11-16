@@ -74,6 +74,7 @@ module.exports = {
         sm: 'calc(var(--radius) - 4px)',
       },
       screens: {
+        overflowXs: '444px',
         nav: '815px',
       },
       keyframes: {

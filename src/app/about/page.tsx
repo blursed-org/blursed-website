@@ -68,7 +68,7 @@ export default async function About() {
             Discord <strong>@tellay_</strong>
           </components.p>
 
-          <div className="mt-4 flex items-center gap-4">
+          <div className="overflowXs:overflow-x-hidden mt-4 flex items-center gap-4 overflow-x-scroll">
             {socialMedias.map((socialMedia) => (
               <Link
                 className={buttonVariants({
