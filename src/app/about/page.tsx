@@ -41,14 +41,19 @@ export default async function About() {
       date: '2020',
       title: 'React & Styled Components',
       description:
-        'Em 2020 interesso-me pelo desenvolvimento web e descubro o React devido ao meu conhecimento já em Javascript. Por esta altura era também bastante popular o uso de uma biblioteca chamada styled-components para definir o CSS do website (CSS-in-JS).',
+        'Em 2020 interesso-me pelo desenvolvimento web e descubro o React devido ao meu conhecimento já em Javascript. Por esta altura era também bastante popular o uso de uma biblioteca chamada styled-components para estilizar o website (CSS-in-JS).',
     },
-
+    {
+      date: '2021',
+      title: 'Escola Profissional do Montijo',
+      description:
+        'Devido o meu gosto pela tecnologia decido então estudar na Escola Profissional do Montijo. Onde atualmente encontro-me ainda a estudar no curso TGPSI e a concretizar a minha PAP (Prova de Aptidão Profissional).',
+    },
     {
       date: '2022',
       title: 'Next.js & Tailwind CSS',
       description:
-        'Em 2022 contínuo a aprofundar os meus conhecimentos em desenvolvimento web. Utilizo agora maioritariamente a framework Next.js (React) juntamente com Tailwind CSS para defnir o CSS do website atráves de classes utilitárias.',
+        'Em 2022 contínuo a aprofundar os meus conhecimentos em desenvolvimento web. Utilizo agora maioritariamente a framework Next.js (React) juntamente com Tailwind CSS para estilizar o website atráves de classes utilitárias.',
     },
   ]
 
@@ -64,8 +69,8 @@ export default async function About() {
             mais e mais. Quando não estou a programar, gosto de ouvir e tocar
             música. A minha coisa favorita é ficar em casa a procrastinar.
             <br />
-            <br />A maneira mais rápida e fácil de entrarem contato comigo é via
-            Discord <strong>@tellay_</strong>
+            <br />A maneira mais rápida e fácil de entrar em contato comigo é
+            via Discord <strong>@tellay_</strong>
           </components.p>
 
           <div className="mt-4 flex items-center gap-4 overflow-x-scroll overflowXs:overflow-x-hidden">

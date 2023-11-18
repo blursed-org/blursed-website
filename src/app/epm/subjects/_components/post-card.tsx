@@ -15,9 +15,9 @@ export function PostCard({ post }: PostCardProps) {
   return (
     <Link
       href={post.slug}
-      className="h-full rounded-lg border bg-background p-[6px] shadow-lg shadow-black/5 transition hover:-translate-y-1 hover:shadow-black/10"
+      className="h-full rounded-lg border bg-background p-[6px] shadow-lg shadow-black/5 transition hover:-translate-y-1 hover:scale-[101%] hover:shadow-black/10"
     >
-      <div className="flex h-[198px] flex-col justify-between">
+      <div className="flex h-[208px] flex-col justify-between">
         <div className="flex flex-col p-3">
           {/* <Image
               className="h-[200px] rounded-md object-cover"

@@ -75,7 +75,7 @@ module.exports = {
       },
       screens: {
         overflowXs: '444px',
-        nav: '815px',
+        nav: '830px',
       },
       keyframes: {
         'accordion-down': {
