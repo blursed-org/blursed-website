@@ -62,7 +62,7 @@ export function Header() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur">
+    <header className="sticky top-0 z-[100] w-full border-b bg-background/95 backdrop-blur">
       <div className="flex h-14 items-center px-4 md:container">
         <div className="flex items-center">
           <Link
@@ -72,7 +72,9 @@ export function Header() {
               className: 'hover:bg-transparent md:mr-6',
             })}
           >
-            <Logo className="h-5 w-5" />
+            {/* <Logo className="h-5 w-5" /> */}
+            {/* Change Icon Later */}
+            <div className="h-5 w-5 rounded-sm bg-secondary"></div>
           </Link>
 
           <NavigationMenu className="hidden nav:block">

@@ -47,7 +47,7 @@ export default async function About() {
       date: '2021',
       title: 'Escola Profissional do Montijo',
       description:
-        'Devido o meu gosto pela tecnologia decido então estudar na Escola Profissional do Montijo. Onde atualmente encontro-me ainda a estudar no curso TGPSI e a concretizar a minha PAP (Prova de Aptidão Profissional).',
+        'Devido ao meu gosto pela tecnologia decido então estudar na Escola Profissional do Montijo. Onde atualmente encontro-me ainda a estudar no curso TGPSI e a concretizar a minha PAP (Prova de Aptidão Profissional).',
     },
     {
       date: '2022',
@@ -59,7 +59,7 @@ export default async function About() {
 
   return (
     <div>
-      <div className="absolute inset-0 -z-10 h-full bg-[url('../../public/grid-light.svg')] bg-center bg-repeat [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] dark:bg-[url('../../public/grid-dark.svg')]" />
+      {/* <div className="absolute inset-0 -z-10 h-full bg-[url('../../public/grid-light.svg')] bg-center bg-repeat [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] dark:bg-[url('../../public/grid-dark.svg')]" /> */}
 
       <div className="container">
         <div className="px-4 py-10">
