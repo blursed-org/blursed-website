@@ -54,7 +54,7 @@ export function Header() {
         'Tópicos técnicos que foram abordados enquanto frequentei o curso.',
     },
     {
-      title: 'PAP',
+      title: 'Anexos',
       href: '/epm/pap',
       description:
         'Documentos relacionados com a minha prova de aptidão profissional (PAP).',
