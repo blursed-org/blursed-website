@@ -17,7 +17,7 @@ const jetBrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'OpenTech',
+  title: 'XXX',
   description: 'Website for my PAP.',
 }
 
