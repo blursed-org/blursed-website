@@ -17,8 +17,9 @@ const jetBrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'XXX',
-  description: 'Website for my PAP.',
+  title: 'Blursed',
+  description:
+    'Organização sem fins lucrativos, para a minha prova de aptidão profissional .',
 }
 
 export default function RootLayout({
