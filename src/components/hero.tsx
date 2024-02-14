@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import {
   AiOutlineGithub as GitHub,
-  AiFillLinkedin as LinkedIn,
+  AiOutlineInstagram as Instagram,
 } from 'react-icons/ai'
 
 import { FollowUs } from './follow-us'
@@ -21,14 +21,14 @@ export async function Hero() {
   const socialMediaLinks: SocialMediaLink[] = [
     {
       name: 'GitHub',
-      href: 'https://github.com/tellay/pap-website',
+      href: 'https://github.com/blursed-org',
       icon: GitHub,
     },
     {
-      name: 'LinkedIn',
-      href: 'https://www.linkedin.com/',
+      name: 'Instagram',
+      href: 'https://www.instagram.com/blursed_org',
       variant: 'outline',
-      icon: LinkedIn,
+      icon: Instagram,
     },
   ]
 
@@ -46,7 +46,7 @@ export async function Hero() {
 
       <p className="px-4 py-3 text-center text-base font-medium text-muted-foreground sm:text-lg">
         Nós provemos segurança e privacidade aos nossos utilizadores. <br />
-        Conheça mais sobre os nossos produtos. Experimente agora! Our products
+        Conheça mais sobre os nossos produtos. Experimente agora!
       </p>
 
       <div className="flex flex-col py-4 sm:py-3">

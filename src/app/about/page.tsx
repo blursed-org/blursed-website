@@ -1,8 +1,5 @@
 import { FaInstagram as Instagram } from 'react-icons/fa'
-import {
-  AiOutlineGithub as GitHub,
-  AiFillLinkedin as LinkedIn,
-} from 'react-icons/ai'
+import { AiOutlineGithub as GitHub } from 'react-icons/ai'
 
 import Link from 'next/link'
 import { buttonVariants } from '@/components/ui/button'
@@ -14,18 +11,13 @@ export default async function About() {
   const socialMedias = [
     {
       name: 'Instagram',
-      href: 'https://instagram.com/tellay',
+      href: 'https://instagram.com/joao.robotmc',
       icon: Instagram,
     },
     {
       name: 'GitHub',
       href: 'https://github.com/tellay',
       icon: GitHub,
-    },
-    {
-      name: 'LinkedIn',
-      href: 'https://linkedin.com/tellay',
-      icon: LinkedIn,
     },
   ]
 

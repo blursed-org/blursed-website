@@ -33,10 +33,6 @@ export interface NavComponent {
 export function Header() {
   const navLinks: NavLink[] = [
     {
-      name: 'Projetos',
-      href: '/projects',
-    },
-    {
       name: 'Sobre mim',
       href: '/about',
     },
@@ -113,13 +109,15 @@ export function Header() {
                 variant: 'outline',
                 className: 'flex gap-2 text-xs',
               })}
-              href={'https://github.com/tellay/pap-website'}
+              href={'https://github.com/blursed-org'}
               target="_blank"
             >
               <Star className="h-4 w-4" />
               Repostório no GitHub
             </Link>
-            <Button>Contato</Button>
+            <Link className={buttonVariants()} href={'mailto:joao@gmail.com'}>
+              Contato
+            </Link>
           </div>
 
           <MobileNav links={navLinks} components={navComponents} />
