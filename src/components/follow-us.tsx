@@ -8,8 +8,6 @@ export function FollowUs() {
       sequence={[
         '-> Conheça o nosso GitHub',
         7500,
-        '-> Siga-nos no LinkedIn',
-        7500,
         '-> Siga-nos no Instagram',
         7500,
       ]}
