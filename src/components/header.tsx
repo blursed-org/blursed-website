@@ -40,10 +40,6 @@ export function Header() {
       name: 'Sobre mim',
       href: '/about',
     },
-    {
-      name: 'Curriculum',
-      href: '/curriculum',
-    },
   ]
 
   const navComponents = [
