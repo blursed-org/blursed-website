@@ -2,13 +2,13 @@
 
 import Link from 'next/link'
 import { AiOutlineStar as Star } from 'react-icons/ai'
-import { IoLogoAppleAr as Logo } from 'react-icons/io5'
+import { GiTriforce as Logo } from 'react-icons/gi'
 
 import { cn } from '@/lib/utils'
 import React from 'react'
 import { ChangeTheme } from './change-theme'
 import { MobileNav } from './mobile-nav'
-import { Button, buttonVariants } from './ui/button'
+import { buttonVariants } from './ui/button'
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -64,9 +64,7 @@ export function Header() {
               className: 'hover:bg-transparent md:mr-6',
             })}
           >
-            {/* <Logo className="h-5 w-5" /> */}
-            {/* Change Icon Later */}
-            <div className="h-5 w-5 rounded-sm bg-secondary"></div>
+            <Logo className="h-5 w-5 rotate-180" />
           </Link>
 
           <NavigationMenu className="hidden nav:block">
