@@ -44,8 +44,8 @@ export async function WhoWeAre() {
           </h2>
 
           <p className="mt-8 max-w-2xl text-center text-base font-normal text-muted-foreground">
-            XXX é uma organização sem fins lucrativos. Acreditamos no poder da
-            internet e dos projetos open-source. Achamos que a web deve ser
+            Blursed é uma organização sem fins lucrativos. Acreditamos no poder
+            da internet e dos projetos open-source. Achamos que a web deve ser
             grátis, privada e um local seguro para nós todos!
           </p>
 
