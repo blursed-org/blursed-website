@@ -12,7 +12,7 @@ export async function Products() {
 
     {
       name: 'Rosie AI',
-      href: 'https://discord.gg/AgRvpjGHNn',
+      href: 'https://discord.com/oauth2/authorize?client_id=1132759106994847766&permissions=8&scope=bot',
       description:
         'Um chatbot amigável que está sempre pronta para conversar e ajudar de forma eficiente.',
       features: [
