@@ -113,7 +113,10 @@ export function Header() {
               <Star className="h-4 w-4" />
               Repostório no GitHub
             </Link>
-            <Link className={buttonVariants()} href={'mailto:joao@gmail.com'}>
+            <Link
+              className={buttonVariants()}
+              href={'mailto:blursed.org@gmail.com'}
+            >
               Contato
             </Link>
           </div>
