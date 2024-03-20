@@ -3,7 +3,7 @@ import { Product } from './product'
 export async function Products() {
   const products = [
     {
-      name: 'MenuTree',
+      name: 'Menutree',
       href: 'https://tellay-menutree.vercel.app',
       description:
         'O seu restaurante em um link. Menos papéis, apenas a um QRCode de distância. Junte-se a nós, use menos papéis e compartilhe os seus menus. Vamos ajudar o Planeta para nos ajudarmos.',
