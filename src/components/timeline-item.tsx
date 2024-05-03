@@ -1,9 +1,9 @@
-import { components } from '@/components/mdx/mdx-components'
+import { components } from "@/components/mdx/mdx-components";
 
 interface TimeLineItemProps {
-  date: string
-  title: string
-  description: string
+  date: string;
+  title: string;
+  description: string;
 }
 
 export async function TimeLineItem({
@@ -20,5 +20,5 @@ export async function TimeLineItem({
         {description}
       </components.p>
     </li>
-  )
+  );
 }

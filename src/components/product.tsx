@@ -1,15 +1,15 @@
-import Link from 'next/link'
+import Link from "next/link";
 
-import { FiExternalLink as ExternalLink } from 'react-icons/fi'
-import { BsCheckLg as Check } from 'react-icons/bs'
-import { features } from 'process'
+import { FiExternalLink as ExternalLink } from "react-icons/fi";
+import { BsCheckLg as Check } from "react-icons/bs";
+import { features } from "process";
 
 interface productProps {
-  logo?: React.ElementType
-  name: string
-  href: string
-  description: string
-  features: string[]
+  logo?: React.ElementType;
+  name: string;
+  href: string;
+  description: string;
+  features: string[];
 }
 
 export async function Product({
@@ -43,5 +43,5 @@ export async function Product({
         </div>
       </div>
     </Link>
-  )
+  );
 }

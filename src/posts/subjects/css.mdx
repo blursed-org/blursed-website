@@ -12,23 +12,24 @@ date: 2023-11-02
 Pode ser utilizada `internamente` no arquivo de `HTML` ou `externamente` utilizando o elemento `<link>`
 
 ### Exemplo de utilização internamente
+
 ```html title="index.html" showLineNumbers {6-17}
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>Título</title>
-    
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
 
-        body {
-            background-color: black;
-            color: white;
-        }
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: black;
+        color: white;
+      }
     </style>
   </head>
   <body>
@@ -41,12 +42,12 @@ Pode ser utilizada `internamente` no arquivo de `HTML` ou `externamente` utiliza
 ### Exemplo de utilização externamente
 
 ```html title="index.html" showLineNumbers {6}
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>Título</title>
-    
-    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <h1>O meu primeiro cabeçalho.</h1>
@@ -57,17 +58,17 @@ Pode ser utilizada `internamente` no arquivo de `HTML` ou `externamente` utiliza
 
 ```css title="styles.css" showLineNumbers
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 ```
 
 ## Documentação
 
-* [Mozilla Developer](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Mozilla Developer](https://developer.mozilla.org/en-US/docs/Web/CSS)

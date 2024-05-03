@@ -1,14 +1,14 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import { Post } from 'contentlayer/generated'
-import { format, parseISO } from 'date-fns'
-import { pt } from 'date-fns/locale'
+import Link from "next/link";
+import { Post } from "contentlayer/generated";
+import { format, parseISO } from "date-fns";
+import { pt } from "date-fns/locale";
 
-import { Button } from '@/components/ui/button'
+import { Button } from "@/components/ui/button";
 
 interface PostCardProps {
-  post: Post
+  post: Post;
 }
 
 export function PostCard({ post }: PostCardProps) {
@@ -32,7 +32,7 @@ export function PostCard({ post }: PostCardProps) {
               className="text-sm capitalize text-foreground/60"
               dateTime={post.date}
             >
-              {format(parseISO(post.date), 'd MMMM yyyy', { locale: pt })}
+              {format(parseISO(post.date), "d MMMM yyyy", { locale: pt })}
             </time>
           </div>
 
@@ -48,11 +48,11 @@ export function PostCard({ post }: PostCardProps) {
 
         <Button
           className="mt-2 w-full opacity-80 transition hover:opacity-100"
-          variant={'secondary'}
+          variant={"secondary"}
         >
           Ler Mais
         </Button>
       </div>
     </Link>
-  )
+  );
 }

@@ -1,14 +1,14 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import { AiOutlineStar as Star } from 'react-icons/ai'
-import { GiTriforce as Logo } from 'react-icons/gi'
+import Link from "next/link";
+import { AiOutlineStar as Star } from "react-icons/ai";
+import { GiTriforce as Logo } from "react-icons/gi";
 
-import { cn } from '@/lib/utils'
-import React from 'react'
-import { ChangeTheme } from './change-theme'
-import { MobileNav } from './mobile-nav'
-import { buttonVariants } from './ui/button'
+import { cn } from "@/lib/utils";
+import React from "react";
+import { ChangeTheme } from "./change-theme";
+import { MobileNav } from "./mobile-nav";
+import { buttonVariants } from "./ui/button";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -17,51 +17,51 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from './ui/navigation-menu'
+} from "./ui/navigation-menu";
 
 export interface NavLink {
-  name: string
-  href: string
+  name: string;
+  href: string;
 }
 
 export interface NavComponent {
-  title: string
-  href: string
-  description: string
+  title: string;
+  href: string;
+  description: string;
 }
 
 export function Header() {
   const navLinks: NavLink[] = [
     {
-      name: 'Sobre mim',
-      href: '/about',
+      name: "Sobre mim",
+      href: "/about",
     },
-  ]
+  ];
 
   const navComponents = [
     {
-      title: 'Matérias',
-      href: '/epm/subjects',
+      title: "Matérias",
+      href: "/epm/subjects",
       description:
-        'Tópicos técnicos que foram abordados enquanto frequentei o curso.',
+        "Tópicos técnicos que foram abordados enquanto frequentei o curso.",
     },
     {
-      title: 'Anexos',
-      href: '/epm/pap',
+      title: "Anexos",
+      href: "/epm/pap",
       description:
-        'Documentos relacionados com a minha prova de aptidão profissional (PAP).',
+        "Documentos relacionados com a minha prova de aptidão profissional (PAP).",
     },
-  ]
+  ];
 
   return (
     <header className="sticky top-0 z-[100] w-full border-b bg-background/95 backdrop-blur">
       <div className="flex h-14 items-center px-4 md:container">
         <div className="flex items-center">
           <Link
-            href={'/'}
+            href={"/"}
             className={buttonVariants({
-              variant: 'link',
-              className: 'hover:bg-transparent md:mr-6',
+              variant: "link",
+              className: "hover:bg-transparent md:mr-6",
             })}
           >
             <Logo className="h-5 w-5 rotate-180" />
@@ -104,10 +104,10 @@ export function Header() {
           <div className="hidden items-center gap-2 nav:flex">
             <Link
               className={buttonVariants({
-                variant: 'outline',
-                className: 'flex gap-2 text-xs',
+                variant: "outline",
+                className: "flex gap-2 text-xs",
               })}
-              href={'https://github.com/blursed-org'}
+              href={"https://github.com/blursed-org"}
               target="_blank"
             >
               <Star className="h-4 w-4" />
@@ -115,7 +115,7 @@ export function Header() {
             </Link>
             <Link
               className={buttonVariants()}
-              href={'mailto:blursed.org@gmail.com'}
+              href={"mailto:blursed.org@gmail.com"}
             >
               Contato
             </Link>
@@ -126,12 +126,12 @@ export function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }
 
 const ListItem = React.forwardRef<
-  React.ElementRef<'a'>,
-  React.ComponentPropsWithoutRef<'a'>
+  React.ElementRef<"a">,
+  React.ComponentPropsWithoutRef<"a">
 >(({ className, title, children, ...props }, ref) => {
   return (
     <li>
@@ -139,7 +139,7 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={cn(
-            'block select-none space-y-1 rounded-md p-4 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
+            "block select-none space-y-1 rounded-md p-4 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
             className,
           )}
           {...props}
@@ -151,6 +151,6 @@ const ListItem = React.forwardRef<
         </a>
       </NavigationMenuLink>
     </li>
-  )
-})
-ListItem.displayName = 'ListItem'
+  );
+});
+ListItem.displayName = "ListItem";

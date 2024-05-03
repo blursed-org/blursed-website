@@ -1,18 +1,18 @@
-'use client'
+"use client";
 
-import { allPosts } from 'contentlayer/generated'
-import { compareDesc } from 'date-fns'
+import { allPosts } from "contentlayer/generated";
+import { compareDesc } from "date-fns";
 
-import { Input } from '@/components/ui/input'
-import { useState } from 'react'
-import { PostCard } from './_components/post-card'
+import { Input } from "@/components/ui/input";
+import { useState } from "react";
+import { PostCard } from "./_components/post-card";
 
 export default function BlogPage() {
-  const [search, setSearch] = useState('')
+  const [search, setSearch] = useState("");
 
   const posts = allPosts.sort((a, b) =>
     compareDesc(new Date(a.date), new Date(b.date)),
-  )
+  );
 
   const filteredPosts =
     search.length > 0
@@ -21,7 +21,7 @@ export default function BlogPage() {
             post.title.toLowerCase().includes(search.toLowerCase()) ||
             post.description.toLowerCase().includes(search.toLowerCase()),
         )
-      : posts
+      : posts;
 
   return (
     <section className="container">
@@ -48,5 +48,5 @@ export default function BlogPage() {
         </div>
       </div>
     </section>
-  )
+  );
 }

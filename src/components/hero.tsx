@@ -1,36 +1,36 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 import {
   AiOutlineGithub as GitHub,
   AiOutlineInstagram as Instagram,
-} from 'react-icons/ai'
+} from "react-icons/ai";
 
-import { FollowUs } from './follow-us'
-import { ButtonProps, buttonVariants } from './ui/button'
+import { FollowUs } from "./follow-us";
+import { ButtonProps, buttonVariants } from "./ui/button";
 
-import { HeroBadge } from './hero-badge'
+import { HeroBadge } from "./hero-badge";
 
 interface SocialMediaLink {
-  name: string
-  href: string
-  variant?: ButtonProps['variant']
-  icon: React.ElementType
+  name: string;
+  href: string;
+  variant?: ButtonProps["variant"];
+  icon: React.ElementType;
 }
 
 export async function Hero() {
   const socialMediaLinks: SocialMediaLink[] = [
     {
-      name: 'GitHub',
-      href: 'https://github.com/blursed-org',
+      name: "GitHub",
+      href: "https://github.com/blursed-org",
       icon: GitHub,
     },
     {
-      name: 'Instagram',
-      href: 'https://www.instagram.com/blursed_org',
-      variant: 'outline',
+      name: "Instagram",
+      href: "https://www.instagram.com/blursed_org",
+      variant: "outline",
       icon: Instagram,
     },
-  ]
+  ];
 
   return (
     <div className="relative grid place-content-center py-24 sm:py-32">
@@ -57,8 +57,8 @@ export async function Hero() {
             <Link
               key={socialMediaLink.name}
               className={buttonVariants({
-                variant: socialMediaLink.variant || 'default',
-                className: 'flex w-full items-center gap-2',
+                variant: socialMediaLink.variant || "default",
+                className: "flex w-full items-center gap-2",
               })}
               href={socialMediaLink.href}
               target="_blank"
@@ -70,5 +70,5 @@ export async function Hero() {
         </div>
       </div>
     </div>
-  )
+  );
 }

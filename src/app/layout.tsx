@@ -1,31 +1,31 @@
-import './globals.css'
-import './styles/mdx.css'
+import "./globals.css";
+import "./styles/mdx.css";
 
-import type { Metadata } from 'next'
+import type { Metadata } from "next";
 // eslint-disable-next-line camelcase
-import { Inter, JetBrains_Mono } from 'next/font/google'
+import { Inter, JetBrains_Mono } from "next/font/google";
 
-import { Providers } from '@/components/providers'
+import { Providers } from "@/components/providers";
 
-import { Header } from '@/components/header'
+import { Header } from "@/components/header";
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 const jetBrainsMono = JetBrains_Mono({
-  subsets: ['latin'],
-  variable: '--font-jetbrains-mono',
-})
+  subsets: ["latin"],
+  variable: "--font-jetbrains-mono",
+});
 
 export const metadata: Metadata = {
-  title: 'Blursed',
+  title: "Blursed",
   description:
-    'Organização sem fins lucrativos, para a minha prova de aptidão profissional .',
-}
+    "Organização sem fins lucrativos, para a minha prova de aptidão profissional .",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -38,5 +38,5 @@ export default function RootLayout({
         </Providers>
       </body>
     </html>
-  )
+  );
 }

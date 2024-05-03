@@ -1,7 +1,7 @@
-import { Feature } from './who-we-are'
+import { Feature } from "./who-we-are";
 
 interface FeatureProps {
-  feature: Feature
+  feature: Feature;
 }
 
 export async function Feature({ feature }: FeatureProps) {
@@ -16,5 +16,5 @@ export async function Feature({ feature }: FeatureProps) {
         <p className="text-muted-foreground">{feature.description}</p>
       </div>
     </div>
-  )
+  );
 }

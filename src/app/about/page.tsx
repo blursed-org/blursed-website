@@ -1,53 +1,53 @@
-import { FaInstagram as Instagram } from 'react-icons/fa'
-import { AiOutlineGithub as GitHub } from 'react-icons/ai'
+import { FaInstagram as Instagram } from "react-icons/fa";
+import { AiOutlineGithub as GitHub } from "react-icons/ai";
 
-import Link from 'next/link'
-import { buttonVariants } from '@/components/ui/button'
-import { components } from '@/components/mdx/mdx-components'
-import { Separator } from '@/components/ui/separator'
-import { TimeLineItem } from '@/components/timeline-item'
+import Link from "next/link";
+import { buttonVariants } from "@/components/ui/button";
+import { components } from "@/components/mdx/mdx-components";
+import { Separator } from "@/components/ui/separator";
+import { TimeLineItem } from "@/components/timeline-item";
 
 export default async function About() {
   const socialMedias = [
     {
-      name: 'Instagram',
-      href: 'https://instagram.com/joao.robotmc',
+      name: "Instagram",
+      href: "https://instagram.com/joao.robotmc",
       icon: Instagram,
     },
     {
-      name: 'GitHub',
-      href: 'https://github.com/tellay',
+      name: "GitHub",
+      href: "https://github.com/tellay",
       icon: GitHub,
     },
-  ]
+  ];
 
   const timeLine = [
     {
-      date: '2019',
-      title: 'Bots de Discord',
+      date: "2019",
+      title: "Bots de Discord",
       description:
-        'Em 2019 fico mais curioso sobre o mundo da programação. Atráves de algumas pesquisas descubro a linguagem de programação Javascript, na qual fico super interessado. Decido então aprofundar-me na linguagem e nos Bots de Discord.',
+        "Em 2019 fico mais curioso sobre o mundo da programação. Atráves de algumas pesquisas descubro a linguagem de programação Javascript, na qual fico super interessado. Decido então aprofundar-me na linguagem e nos Bots de Discord.",
     },
 
     {
-      date: '2020',
-      title: 'React & Styled Components',
+      date: "2020",
+      title: "React & Styled Components",
       description:
-        'Em 2020 interesso-me pelo desenvolvimento web e descubro o React devido ao meu conhecimento já em Javascript. Por esta altura era também bastante popular o uso de uma biblioteca chamada styled-components para estilizar o website (CSS-in-JS).',
+        "Em 2020 interesso-me pelo desenvolvimento web e descubro o React devido ao meu conhecimento já em Javascript. Por esta altura era também bastante popular o uso de uma biblioteca chamada styled-components para estilizar o website (CSS-in-JS).",
     },
     {
-      date: '2021',
-      title: 'Escola Profissional do Montijo',
+      date: "2021",
+      title: "Escola Profissional do Montijo",
       description:
-        'Devido ao meu gosto pela tecnologia decido então estudar na Escola Profissional do Montijo. Onde atualmente encontro-me ainda a estudar no curso TGPSI e a concretizar a minha PAP (Prova de Aptidão Profissional).',
+        "Devido ao meu gosto pela tecnologia decido então estudar na Escola Profissional do Montijo. Onde atualmente encontro-me ainda a estudar no curso TGPSI e a concretizar a minha PAP (Prova de Aptidão Profissional).",
     },
     {
-      date: '2022',
-      title: 'Next.js & Tailwind CSS',
+      date: "2022",
+      title: "Next.js & Tailwind CSS",
       description:
-        'Em 2022 contínuo a aprofundar os meus conhecimentos em desenvolvimento web. Utilizo agora maioritariamente a framework Next.js (React) juntamente com Tailwind CSS para estilizar o website atráves de classes utilitárias.',
+        "Em 2022 contínuo a aprofundar os meus conhecimentos em desenvolvimento web. Utilizo agora maioritariamente a framework Next.js (React) juntamente com Tailwind CSS para estilizar o website atráves de classes utilitárias.",
     },
-  ]
+  ];
 
   return (
     <div>
@@ -69,8 +69,8 @@ export default async function About() {
             {socialMedias.map((socialMedia) => (
               <Link
                 className={buttonVariants({
-                  variant: 'secondary',
-                  className: 'flex items-center gap-2 no-underline',
+                  variant: "secondary",
+                  className: "flex items-center gap-2 no-underline",
                 })}
                 key={socialMedia.name}
                 href={socialMedia.href}
@@ -102,5 +102,5 @@ export default async function About() {
         </div>
       </div>
     </div>
-  )
+  );
 }

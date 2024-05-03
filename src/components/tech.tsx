@@ -1,15 +1,15 @@
-import Link from 'next/link'
+import Link from "next/link";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from './ui/tooltip'
+} from "./ui/tooltip";
 
 interface TechProps {
-  tech: string
-  href: string
-  icon: JSX.Element
+  tech: string;
+  href: string;
+  icon: JSX.Element;
 }
 
 export async function Tech({ tech, href, icon }: TechProps) {
@@ -26,5 +26,5 @@ export async function Tech({ tech, href, icon }: TechProps) {
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
-  )
+  );
 }

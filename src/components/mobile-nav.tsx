@@ -1,55 +1,55 @@
-'use client'
-import { HiOutlineMenuAlt4 as Menu } from 'react-icons/hi'
+"use client";
+import { HiOutlineMenuAlt4 as Menu } from "react-icons/hi";
 
-import { NavComponent, NavLink } from './header'
-import { Button, buttonVariants } from './ui/button'
+import { NavComponent, NavLink } from "./header";
+import { Button, buttonVariants } from "./ui/button";
 
-import { IoLogoAppleAr as Logo } from 'react-icons/io5'
+import { IoLogoAppleAr as Logo } from "react-icons/io5";
 
-import Link from 'next/link'
-import { useState } from 'react'
+import Link from "next/link";
+import { useState } from "react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from './ui/accordion'
+} from "./ui/accordion";
 import {
   Sheet,
   SheetContent,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from './ui/sheet'
+} from "./ui/sheet";
 
 interface MobileNavProps {
-  links: NavLink[]
-  components: NavComponent[]
+  links: NavLink[];
+  components: NavComponent[];
 }
 
 export function MobileNav({ links, components }: MobileNavProps) {
-  const [open, setIsOpen] = useState(false)
+  const [open, setIsOpen] = useState(false);
 
   return (
     <Sheet open={open} onOpenChange={setIsOpen}>
       <SheetTrigger asChild>
         <Button
-          variant={'ghost'}
+          variant={"ghost"}
           className="block p-2 hover:bg-transparent nav:hidden"
         >
           <Menu className="h-5 w-5" />
         </Button>
       </SheetTrigger>
 
-      <SheetContent side={'top'}>
+      <SheetContent side={"top"}>
         <SheetHeader>
           <SheetTitle className="flex items-center">
             <Link
               className={buttonVariants({
-                variant: 'link',
-                className: '-mx-2 -mt-2 w-fit !p-2',
+                variant: "link",
+                className: "-mx-2 -mt-2 w-fit !p-2",
               })}
-              href={'/'}
+              href={"/"}
               onClick={() => setIsOpen(!open)}
             >
               <Logo className="h-5 w-5" />
@@ -90,5 +90,5 @@ export function MobileNav({ links, components }: MobileNavProps) {
         </div>
       </SheetContent>
     </Sheet>
-  )
+  );
 }

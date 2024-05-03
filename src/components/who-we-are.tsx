@@ -1,39 +1,39 @@
-import { AiOutlineGithub as GitHub } from 'react-icons/ai'
+import { AiOutlineGithub as GitHub } from "react-icons/ai";
 import {
   MdOutlineMoneyOffCsred as NoMoney,
   MdSecurity as Security,
-} from 'react-icons/md'
-import { Feature } from './feature'
+} from "react-icons/md";
+import { Feature } from "./feature";
 
 export interface Feature {
-  title: string
-  description: string
-  icon: JSX.Element
+  title: string;
+  description: string;
+  icon: JSX.Element;
 }
 
 export async function WhoWeAre() {
   const orgFeatures: Feature[] = [
     {
-      title: 'Open-Source',
+      title: "Open-Source",
       description:
-        'Todos os nossos produtos são open-source, passe pelo nosso repositório no GitHub e contribua!',
+        "Todos os nossos produtos são open-source, passe pelo nosso repositório no GitHub e contribua!",
       icon: <GitHub className="h-8 w-8 shrink-0" />,
     },
 
     {
-      title: 'Privacidade e Segurança',
+      title: "Privacidade e Segurança",
       description:
-        'Nós provemos uma experiência segurança e privada. Se notar algo errado, diga-nos. Nos vamos corrigir!',
+        "Nós provemos uma experiência segurança e privada. Se notar algo errado, diga-nos. Nos vamos corrigir!",
       icon: <Security className="h-8 w-8 shrink-0" />,
     },
 
     {
-      title: 'Sem Pagamentos',
+      title: "Sem Pagamentos",
       description:
-        'Somos totalmente de graça, não temos anúncios nem subscrições.',
+        "Somos totalmente de graça, não temos anúncios nem subscrições.",
       icon: <NoMoney className="h-8 w-8 shrink-0" />,
     },
-  ]
+  ];
 
   return (
     <div className="bg-radialGradient px-4 py-20">
@@ -57,5 +57,5 @@ export async function WhoWeAre() {
         </div>
       </div>
     </div>
-  )
+  );
 }

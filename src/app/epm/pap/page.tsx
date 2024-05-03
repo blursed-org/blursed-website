@@ -1,22 +1,22 @@
-import { Separator } from '@/components/ui/separator'
-import { components } from '@/components/mdx/mdx-components'
+import { Separator } from "@/components/ui/separator";
+import { components } from "@/components/mdx/mdx-components";
 
 const files = [
   {
-    title: 'Referêncial de TGPSI',
-    src: '/tgpsi_ref.pdf',
+    title: "Referêncial de TGPSI",
+    src: "/tgpsi_ref.pdf",
   },
 
   {
-    title: 'Plano de Estágio',
-    src: '/plano_estagio.pdf',
+    title: "Plano de Estágio",
+    src: "/plano_estagio.pdf",
   },
 
   {
-    title: 'Relatório da PAP',
-    src: '/relatorio_pap.pdf',
+    title: "Relatório da PAP",
+    src: "/relatorio_pap.pdf",
   },
-]
+];
 
 export default function PAPPage() {
   return (
@@ -40,5 +40,5 @@ export default function PAPPage() {
         </div>
       </div>
     </div>
-  )
+  );
 }

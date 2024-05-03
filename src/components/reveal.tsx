@@ -1,19 +1,19 @@
-'use client'
+"use client";
 
-import { motion, useAnimation, useInView } from 'framer-motion'
-import { useEffect, useRef } from 'react'
+import { motion, useAnimation, useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 export function Reveal({ children }: { children: React.ReactNode }) {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
-  const mainControls = useAnimation()
+  const mainControls = useAnimation();
 
   useEffect(() => {
     if (isInView) {
-      mainControls.start('visible')
+      mainControls.start("visible");
     }
-  }, [isInView, mainControls])
+  }, [isInView, mainControls]);
 
   return (
     <div ref={ref}>
@@ -29,5 +29,5 @@ export function Reveal({ children }: { children: React.ReactNode }) {
         {children}
       </motion.div>
     </div>
-  )
+  );
 }
