@@ -3,46 +3,46 @@ import {
   SiNextdotjs as Nextjs,
   SiBun as Bun,
   SiPrisma as Prisma,
-} from 'react-icons/si'
-import { GrMysql as MySQL } from 'react-icons/gr'
-import { FaReact as React } from 'react-icons/fa'
-import { CgArrowsScrollV as ArrowDown } from 'react-icons/cg'
+} from "react-icons/si";
+import { BiLogoPostgresql as PostgreSQL } from "react-icons/bi";
+import { FaReact as React } from "react-icons/fa";
+import { CgArrowsScrollV as ArrowDown } from "react-icons/cg";
 
-import { Tech } from './tech'
+import { Tech } from "./tech";
 
 export async function TechStack() {
   const TechStackList = [
     {
-      tech: 'TypeScript',
-      href: 'https://www.typescriptlang.org/',
+      tech: "TypeScript",
+      href: "https://www.typescriptlang.org/",
       icon: <TypeScript className="h-9 w-9" />,
     },
     {
-      tech: 'React',
-      href: 'https://reactjs.org/',
+      tech: "React",
+      href: "https://reactjs.org/",
       icon: <React className="h-9 w-9" />,
     },
     {
-      tech: 'Next.js',
-      href: 'https://nextjs.org/',
+      tech: "Next.js",
+      href: "https://nextjs.org/",
       icon: <Nextjs className="h-9 w-9" />,
     },
     {
-      tech: 'Bun',
-      href: 'https://bun.sh/',
+      tech: "Bun",
+      href: "https://bun.sh/",
       icon: <Bun className="h-9 w-9" />,
     },
     {
-      tech: 'Prisma',
-      href: 'https://www.prisma.io/',
+      tech: "Prisma",
+      href: "https://www.prisma.io/",
       icon: <Prisma className="h-9 w-9" />,
     },
     {
-      tech: 'MySQL',
-      href: 'https://www.mysql.com/',
-      icon: <MySQL className="h-9 w-9" />,
+      tech: "PostgreSQL",
+      href: "https://www.postgresql.org/",
+      icon: <PostgreSQL className="h-9 w-9" />,
     },
-  ]
+  ];
 
   return (
     <section className="relative flex flex-col items-center px-4 py-20">
@@ -60,5 +60,5 @@ export async function TechStack() {
         ))}
       </div>
     </section>
-  )
+  );
 }
