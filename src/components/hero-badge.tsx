@@ -51,5 +51,3 @@ export async function HeroBadge() {
     </Badge>
   );
 }
-
-export const dynamic = "force-dynamic";
