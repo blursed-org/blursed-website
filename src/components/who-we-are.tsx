@@ -23,7 +23,7 @@ export async function WhoWeAre() {
     {
       title: "Privacidade e Segurança",
       description:
-        "Nós provemos uma experiência segurança e privada. Se notar algo errado, diga-nos. Nos vamos corrigir!",
+        "Nós provemos uma experiência segurança e privada. Se notar algo errado, diga-nos. Nós vamos corrigir!",
       icon: <Security className="h-8 w-8 shrink-0" />,
     },
 
