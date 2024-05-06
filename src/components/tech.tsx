@@ -14,7 +14,7 @@ interface TechProps {
 
 export async function Tech({ tech, href, icon }: TechProps) {
   return (
-    <TooltipProvider>
+    <TooltipProvider delayDuration={0}>
       <Tooltip>
         <TooltipTrigger asChild>
           <Link href={href} target="_blank" className="hover:opacity-90">
