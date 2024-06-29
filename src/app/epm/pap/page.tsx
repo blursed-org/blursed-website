@@ -1,4 +1,3 @@
-import { Separator } from "@/components/ui/separator";
 import { components } from "@/components/mdx/mdx-components";
 
 const files = [
@@ -10,6 +9,16 @@ const files = [
   {
     title: "Plano de Estágio",
     src: "/plano_estagio.pdf",
+  },
+
+  {
+    title: "Relatório de Estágio 2º Ano",
+    src: "/relatorio_estagio2.pdf",
+  },
+
+  {
+    title: "Relatório de Estágio 3º Ano",
+    src: "/relatorio_estagio3.pdf",
   },
 
   {
